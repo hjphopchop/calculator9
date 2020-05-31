@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-origin: padding-box;
+}
+
+html {
+    font-size: 16px;
+    background-color:gainsboro;
+}
+
+.calculator {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+}
+
+.calc-container {
+
+    background-color: black;
+    width: 300px;
+    height: auto;
+    border-radius: 0 0 30px 30px;
+} 
+
+.output {
+    width: 100%;
+}
+
+.operation {
+    width: 300px;
+    height: 70px;
+    color: gray;
+    font-size: 1.9em;
+    font-weight: bold;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.operation .value {
+    position: absolute;
+
+    bottom: 5px;
+    right: 10px;
+
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.result {
+    width: 300px;
+    height: 140px;
+
+    color:white;
+    font-size: 2.7em;
+    font-weight: bold;
+
+    overflow: hidden;
+    position: relative;
+}
+
+.result .value {
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.input {
+    background-color: black;
+    border-radius:0 0 25px 25px;
+    border: 1px solid yellow;
+    height: 340px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color:yellow;
+}
+
+.row button {
+    width: 50px;
+    height: 50px;
+
+    font-size: 1.5em;
+
+    border: none;
+    border-radius: 50%;
+    background-color:  transparent;
+
+    margin: 8px;
+
+    cursor: pointer;
+    color: white;
+    
+
+}
+
+.row button:hover{
+    font-weight: bold;
+}
+
+.row #calculate{
+    color:orchid;
+    background-color: orange;
+    width: 121px;
+    border-radius: 50px;
+
+}
+
+.row #delete {
+    color:fuchsia;
+    background-color: gray;
+}
+#division, #multiplication, #subtraction, #addition {
+    color: white;
+    background-color:orange ;
+}
